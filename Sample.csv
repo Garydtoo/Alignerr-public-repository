@@ -1,0 +1,11 @@
+id,status,owner,retry_count,notes
+101,ACTIVE,admin,0,Standard valid payload
+102,pending,user_dev,3,Lowercase status test
+   103   , ACTIVE ,  sys_user  , 1 ,Whitespace padded values
+104,UNKNOWN,qa_lead,5,Valid numeric ID with unknown status
+,ACTIVE,dev_ops,2,Missing required ID (empty string)
+106,,guest,0,Missing status string
+107,INACTIVE,system,-1,Negative integer edge case for retries
+108,ACTIVE,super_admin,abc,Non-numeric string for numeric retry count
+109,null,null,0,Explicit null strings instead of actual values
+110,ACTIVE,"admin, lead",2,Quoted string containing commas inside notes
